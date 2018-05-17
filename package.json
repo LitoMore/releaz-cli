@@ -1,0 +1,28 @@
+{
+  "name": "releaz-cli",
+  "version": "0.0.0",
+  "description": "A CLI tool for generate releaz note",
+  "bin": {
+    "releaz": "cli.js"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LitoMore/releaz-cli.git"
+  },
+  "author": "LitoMore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LitoMore/releaz-cli/issues"
+  },
+  "homepage": "https://github.com/LitoMore/releaz-cli#readme",
+  "dependencies": {
+    "meow": "^5.0.0",
+    "releaz": "^2.0.0"
+  },
+  "devDependencies": {
+    "xo": "^0.21.0"
+  }
+}
