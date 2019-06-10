@@ -26,4 +26,9 @@ const cli = meow(`
 const {format} = cli.flags;
 const [range] = cli.input;
 
-console.log(releaz({range, format}));
+(async () => {
+	const result = await releaz({range, format});
+
+	console.log(result);
+})();
+

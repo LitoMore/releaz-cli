@@ -20,7 +20,7 @@
   "homepage": "https://github.com/LitoMore/releaz-cli#readme",
   "dependencies": {
     "meow": "^5.0.0",
-    "releaz": "^2.0.0"
+    "releaz": "^3.0.0"
   },
   "devDependencies": {
     "xo": "^0.24.0"
