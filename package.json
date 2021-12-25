@@ -2,9 +2,11 @@
   "name": "releaz-cli",
   "version": "2.0.0",
   "description": "A CLI tool for generate releaz note",
+  "type": "module",
   "bin": {
-    "releaz": "cli.js"
+    "releaz": "./cli.js"
   },
+  "engines": "^12.20.0 || ^14.13.1 || >=16.0.0",
   "scripts": {
     "test": "xo"
   },
@@ -19,10 +21,11 @@
   },
   "homepage": "https://github.com/LitoMore/releaz-cli#readme",
   "dependencies": {
-    "meow": "^5.0.0",
-    "releaz": "^3.0.0"
+    "chalk": "^5.0.0",
+    "meow": "^10.1.2",
+    "releaz": "^4.1.0"
   },
   "devDependencies": {
-    "xo": "^0.24.0"
+    "xo": "^0.47.0"
   }
 }

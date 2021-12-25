@@ -1,8 +1,6 @@
 #!/usr/bin/env node
-'use strict';
-
-const releaz = require('releaz');
-const meow = require('meow');
+import releaz from 'releaz';
+import meow from 'meow';
 
 const cli = meow(`
 	Usage
@@ -15,12 +13,13 @@ const cli = meow(`
 		$ releaz 9e21fc4..HEAD
 		$ releaz 9e21fc4..HEAD -f '%H %an %s'
 `, {
+	importMeta: import.meta,
 	flags: {
 		format: {
 			type: 'string',
-			alias: 'f'
-		}
-	}
+			alias: 'f',
+		},
+	},
 });
 
 const {format} = cli.flags;
