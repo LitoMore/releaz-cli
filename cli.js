@@ -17,7 +17,7 @@ const cli = meow(`
 	flags: {
 		format: {
 			type: 'string',
-			alias: 'f',
+			shortFlag: 'f',
 		},
 	},
 });
@@ -25,9 +25,5 @@ const cli = meow(`
 const {format} = cli.flags;
 const [range] = cli.input;
 
-(async () => {
-	const result = await releaz({range, format});
-
-	console.log(result);
-})();
-
+const result = await releaz({range, format});
+console.log(result);
